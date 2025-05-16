@@ -5,26 +5,44 @@ public class pessoa {
 	public static void main(String[] args) {
 		
 		int nota1 = 90;
-		int nota2 = 0;
+		int nota2 = 60;
 		int nota3 = 95;		
-		int nota4 = 0;
+		int nota4 = 30;
 		int media = 0;
+		int dia = 5;
 		
 		media = (nota1+nota2+nota3+nota4) / 4;
 		
-		if (media >= 30) {	
-			if (media >=50) {
-				if(media >70){
-				System.out.println("Aluno aprovado com a nota " + media);
-				}
-			}else {
-				System.out.println("Aluno esta reprovado com a nota " + media);
-			}
-		}
+		
+		switch (dia) {
+		case 1: 
+			System.out.println("Segunda");
+			break;
+		case 2: 
+			System.out.println("Terça");
+			break;
+		case 3: 
+			System.out.println("Quarta");
+			break;
+		case 4: 
+			System.out.println("Quinta");
+			break;
+		case 5: 
+			System.out.println("Sexta");
+			break;
+		case 6: 
+			System.out.println("Sabado");
+			break;
+		case 7: 
+			System.out.println("Domingo");
+			break;
+			
 		
 		
-		
+		default: System.out.println(" Não encontrado");
+			break;
 		
 }
+	}
 
 }
