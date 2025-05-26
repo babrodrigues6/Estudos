@@ -4,12 +4,9 @@ public class pessoa {
 	
 	public static void main(String[] args) {
 		
-		int numero = 0;
-		
-		 while (numero <= 20 ) {
-			 System.out.println("o numero atual é " + numero++);
-			
-		 }
+		for (int numero = 0 ; numero <= 10; numero++) {
+			System.out.println("O numero atual é: " + numero);
+		}
 		
 	}
 
