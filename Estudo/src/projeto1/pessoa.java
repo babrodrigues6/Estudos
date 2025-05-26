@@ -4,19 +4,12 @@ public class pessoa {
 	
 	public static void main(String[] args) {
 		
-		int nota1 = 90;
-		int nota2 = 60;
-		int nota3 = 95;		
-		int nota4 = 30;
-		int media = 0;
-		int dia = 5;
+		int numero = 0;
 		
-		if ( nota1 > nota2) {
-			System.out.println("maior que o outro");
-		}else {
-			System.out.println("menor que o outro");
-		}
-		
+		 while (numero <= 20 ) {
+			 System.out.println("o numero atual é " + numero++);
+			
+		 }
 		
 	}
 
