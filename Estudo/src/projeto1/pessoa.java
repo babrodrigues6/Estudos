@@ -6,35 +6,29 @@ public class pessoa {
 	
 	public static void main(String[] args) {
 		
+		String nota1 = JOptionPane.showInputDialog("Informe a nota 1");
+		String nota2 = JOptionPane.showInputDialog("Informe a nota 2");
+		String nota3 = JOptionPane.showInputDialog("Informe a nota 3");
+		String nota4 = JOptionPane.showInputDialog("Informe a nota 4");
 		
-		String banana = JOptionPane.showInputDialog("Quantas bananas são");
-		String pessoa = JOptionPane.showInputDialog("E são quantas pessoas?");
+		double nota1Numero = Double.parseDouble(nota1);
+		double nota2Numero = Double.parseDouble(nota2);
+		double nota3Numero = Double.parseDouble(nota3);
+		double nota4Numero = Double.parseDouble(nota4);
 		
-		double bananaNumero = Double.parseDouble(banana);
-		double pessoaNumero = Double.parseDouble(pessoa);
+		double media = (nota1Numero + nota2Numero + nota3Numero + nota4Numero) / 4;
 		
-		int divisao = (int)(bananaNumero / pessoaNumero); 
-		
-		double resto = bananaNumero % pessoaNumero;
-		
-		int resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o resultado da divisão");
-		
-		if( resposta == 0) {
-			JOptionPane.showMessageDialog(null, "A quantidade de banana para cada ficou de " + divisao);
-		
-	}else {
-		JOptionPane.showMessageDialog(null, "Então ta meu amigo");
+		if (media >= 50) {
+			if( media >= 70) {
+				 JOptionPane.showMessageDialog(null, "Aluno aprovado com a nota " + media);
+			 }else {
+					JOptionPane.showMessageDialog(null, "Ficou de recuperação com a nota " + media);
+		}
+				
+		}else {
+		   JOptionPane.showMessageDialog(null, "REPROVADOOOOOOOOOO " + media);
+			}
+				
 	}
-		
-		resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o quanto sobrou da operação?");
-		
-		if(resposta == 0){
-			JOptionPane.showMessageDialog(null, "Oque sobrou da divisão foi" + resto);
-		}else
-			JOptionPane.showMessageDialog(null, "Ta blz");
-		
-		
-	
 	}
 
-}
